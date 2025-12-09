@@ -87,11 +87,6 @@ button:hover {
         height: 100vh;
         justify-content: center;  /* GARANTE CENTRALIZAÇÃO */
         align-items: center;      /* VOLTA A CENTRALIZAR NA VERTICAL */
-        
-        /* BACKGROUND ESPECÍFICO PARA CELULAR */
-        background-image: url("https://wallpapercave.com/wp/wp8702558.jpg");
-        background-size: cover;
-        background-position: center;
     }
 
     .tela {
