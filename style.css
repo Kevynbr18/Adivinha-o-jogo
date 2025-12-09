@@ -78,22 +78,19 @@ button:hover {
 }
 
 /* ===========================
-         CELULAR
+      TELA DE CELULAR
 =========================== */
 @media (max-width: 600px) {
 
     body {
         padding: 10px;
-        height: 100vh;
-        justify-content: center;  /* GARANTE CENTRALIZAÇÃO */
-        align-items: center;      /* VOLTA A CENTRALIZAR NA VERTICAL */
+        align-items: flex-start;
     }
 
     .tela {
-        width: 100%;
-        max-width: 380px;
+        margin-top: 20px;
         padding: 18px;
-        margin: 0 auto;
+        border-radius: 10px;
     }
 
     .topo {
