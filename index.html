@@ -10,6 +10,9 @@
 
     <div id="startScreen" class="tela">
         <h1>Quiz sobre Jogos</h1>
+
+        <input type="text" id="nomeJogador" placeholder="Digite seu nome..." class="campoNome">
+
         <p>Escolha a dificuldade:</p>
 
         <button class="nivelBtn" data-nivel="facil">Fácil</button>
@@ -18,20 +21,25 @@
     </div>
 
     <div id="quizScreen" class="tela hidden">
-        <div class="topo">
-            <span id="contadorPergunta"></span>
-            <span>Tempo: <span id="tempo"></span>s</span>
-            <span>Pontos: <span id="pontos"></span></span>
-        </div>
+    <button id="voltarBtn" class="voltarBtn">Voltar</button>
 
-        <h2 id="pergunta"></h2>
-
-        <div id="opcoes"></div>
+    <div class="topo">
+        <span id="contadorPergunta"></span>
+        <span>Tempo: <span id="tempo"></span>s</span>
+        <span>Pontos: <span id="pontos"></span></span>
     </div>
+
+    <h2 id="pergunta"></h2>
+    <div id="opcoes"></div>
+</div>
+
 
     <div id="endScreen" class="tela hidden">
         <h1>Fim de Jogo!</h1>
-        <p>Sua Pontuação: <span id="pontuacaoFinal"></span></p>
+
+        <p><strong>Jogador:</strong> <span id="nomeFinal"></span></p>
+        <p><strong>Pontuação:</strong> <span id="pontuacaoFinal"></span></p>
+
         <button id="recomecarBtn">Recomeçar</button>
     </div>
 
@@ -39,6 +47,5 @@
     <audio id="somErro" src="error-call-to-attention-129258.mp3"></audio>
 
     <script src="script.js"></script>
-    
 </body>
 </html>

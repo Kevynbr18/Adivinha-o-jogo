@@ -2,28 +2,42 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: #f2f2f2;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     min-height: 100vh;
-    background-color: #555;
+
     background-image: url("https://wallpapercave.com/wp/wp2763891.gif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    padding: 20px; /* evita corte em celulares */
+    padding: 20px;
 }
 
 .tela {
     text-align: center;
     width: 100%;
-    max-width: 500px;
-    background: rgba(255,255,255,0.95);
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.25);
-    backdrop-filter: blur(4px);
+    max-width: 480px;
+
+    background: rgba(255, 255, 255, 0.929);
+    padding: 28px;
+    border-radius: 18px;
+
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+}
+
+/* Campo Nome */
+#nomeJogador {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    font-size: 16px;
 }
 
 .hidden {
@@ -39,11 +53,27 @@ button {
     font-size: 16px;
     border-radius: 8px;
     cursor: pointer;
-    width: 100%; /* melhora tocabilidade no mobile */
+    width: 100%;
 }
 
 button:hover {
     background: #555;
+}
+
+.voltarBtn {
+    background: #b30000;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.voltarBtn:hover {
+    background: #e60000;
 }
 
 .topo {
@@ -54,7 +84,8 @@ button:hover {
 }
 
 .opcao {
-    background: #eee;
+    color: #ffffff;
+    background: #747373;
     padding: 14px;
     border-radius: 10px;
     margin-bottom: 12px;
@@ -64,7 +95,7 @@ button:hover {
 }
 
 .opcao:hover {
-    background: #ddd;
+    background: #343434;
 }
 
 .correta {
@@ -77,41 +108,32 @@ button:hover {
     color: white;
 }
 
-/* ===========================
-      TELA DE CELULAR
-=========================== */
+/* CELULAR */
 @media (max-width: 600px) {
 
     body {
         padding: 10px;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     .tela {
-        margin-top: 20px;
         padding: 18px;
-        border-radius: 10px;
-    }
-
-    .topo {
-        font-size: 16px;
-        gap: 5px;
-    }
-
-    .opcao {
-        padding: 12px;
-        font-size: 15px;
+        border-radius: 12px;
     }
 
     button {
         padding: 12px;
         font-size: 15px;
     }
+
+    .opcao {
+        padding: 12px;
+        font-size: 15px;
+    }
 }
 
-/* ===========================
-     TELAS MUITO PEQUENAS
-=========================== */
+/* TELAS MUITO PEQUENAS */
 @media (max-width: 360px) {
 
     .tela {
@@ -120,17 +142,7 @@ button:hover {
 
     .topo {
         flex-direction: column;
-        text-align: center;
         gap: 6px;
-    }
-
-    .opcao {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    button {
-        font-size: 14px;
-        padding: 10px;
+        text-align: center;
     }
 }
