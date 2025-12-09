@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="startScreen" class="tela">
+        <h1>Quiz sobre Jogos</h1>
+        <p>Escolha a dificuldade:</p>
+
+        <button class="nivelBtn" data-nivel="facil">Fácil</button>
+        <button class="nivelBtn" data-nivel="medio">Médio</button>
+        <button class="nivelBtn" data-nivel="dificil">Difícil</button>
+    </div>
+
+    <div id="quizScreen" class="tela hidden">
+        <div class="topo">
+            <span id="contadorPergunta"></span>
+            <span>Tempo: <span id="tempo"></span>s</span>
+            <span>Pontos: <span id="pontos"></span></span>
+        </div>
+
+        <h2 id="pergunta"></h2>
+
+        <div id="opcoes"></div>
+    </div>
+
+    <div id="endScreen" class="tela hidden">
+        <h1>Fim de Jogo!</h1>
+        <p>Sua Pontuação: <span id="pontuacaoFinal"></span></p>
+        <button id="recomecarBtn">Recomeçar</button>
+    </div>
+
+    <audio id="somAcerto" src="rightanswer-95219.mp3"></audio>
+    <audio id="somErro" src="error-call-to-attention-129258.mp3"></audio>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
