@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-
+    background-color: #555;
     background-image: url("https://wallpapercave.com/wp/wp2763891.gif");
     background-size: cover;
     background-position: center;
@@ -106,5 +106,31 @@ button:hover {
     button {
         padding: 12px;
         font-size: 15px;
+    }
+}
+
+/* ===========================
+     TELAS MUITO PEQUENAS
+=========================== */
+@media (max-width: 360px) {
+
+    .tela {
+        padding: 15px;
+    }
+
+    .topo {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+
+    .opcao {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px;
     }
 }
